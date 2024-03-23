@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace, "Liberation Mono", "Courier New",
+    monospace;
+  text-transform: lowercase;
+}
+
+nav {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navitem {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.navitem:hover {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.navitem a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-header {
+  background-color: #333;
+  max-width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  color: #f4f4f4;
+  font-size: 20px;
+}
+
+.section-subheader {
+  max-width: fit-content;
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.section-header:hover,
+.section-subheader:hover {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.my-info {
+  text-align: center;
+  color: #333;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 40px 80px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  color: #6b7280;
+}
+
+.welcome-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.org-logo {
+  height: 20px;
+  width: auto;
+}
+
+.welcome-section div {
+  max-width: 400px;
+}
+
+.techstack-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.techstack-section img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.techstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 5px;
+  gap: 4px;
+}
+
+.techstack:hover {
+  cursor: pointer;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  color: #6b7280;
+}
+
+.project {
+  min-height: 220px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  font-size: 0.8rem;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.project .tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project .tech span {
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 4px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+}
+
+.project img {
+  align-self: center;
+  border-radius: 16px;
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.project h3 {
+  color: #000;
+}
+
+.project a {
+  text-decoration: none;
+  color: #000;
+}
+
+.project a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.links img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+
+  .portfolio-section {
+    flex-direction: column;
+    padding: 0 60px;
+    flex-wrap: nowrap;
+  }
+
+  .project {
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .welcome-section {
+    padding: 20px;
+  }
+
+  .welcome-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .portfolio-section {
+    flex-wrap: nowrap;
+  }
+
+  .section-header {
+    font-size: 16px;
+  }
+
+  .welcome-section {
+    flex-direction: column;
+  }
+  .welcome-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
